@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="position-fixed w-100 top-0">
+            <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="Logo" height="50" class="logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end m-2" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Activities
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#periodic">Periodic Table</a></li>
+                              <li><a class="dropdown-item" href="#survey">Survey Form</a></li>
+                              <li><a class="dropdown-item" href="#">Bootstrap Activity</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Gallery">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+    
+        <main>  
+            <div class="position-relative mt-4 mb-5">
+                <img src="123.jpg" alt="Image" class="img-fluid w-100">
+                <div class="position-absolute top-50 start-50 translate-middle text-center">
+                  <img src="logo.png" alt="">
+                </div>
+              </div>
+        </main>
+        
+        <div class="container-fluid" id="periodic">
+            <div class="embed-responsive">
+              <iframe class="embed-responsive-item responsive-iframe" src="periodic.html"></iframe>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" id="survey">
+            Survey Form
+           </button>
+           
+           <!-- The Modal -->
+           <div class="modal fade" id="myModal">
+             <div class="modal-dialog">
+               <div class="modal-content">
+           
+                 <!-- Modal Header -->
+                 <!-- <div class="modal-header">
+                   <h4 class="modal-title">Modal Heading</h4>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                 </div> -->
+           
+                 <!-- Modal body -->
+                 <div class="modal-body">
+                   <div class="container-fluid">
+                     <h2>My Semester Experience</h2>
+                     <p>Submit a form:</p>
+                       
+                     <form action="" class="was-validated">
+                       <div>
+                         <label for="fname" class="form-label">First Name:</label>
+                         <input type="text" class="form-control" id="fname" placeholder="First name" name="fname" required>
+                         <div class="valid-feedback">Valid.</div>
+                         <div class="invalid-feedback">Please fill out this field.</div>
+                       </div>
+                 
+                       <div>
+                         <label for="lname" class="form-label">Last Name:</label>
+                         <input type="text" class="form-control" id="lname" placeholder="Last name" name="lname" required>
+                         <div class="valid-feedback">Valid.</div>
+                         <div class="invalid-feedback">Please fill out this field.</div>
+                       </div>
+                 
+                       <div>
+                         <label for="mname" class="form-label">Middle Name (optional):</label>
+                         <input type="text" class="form-control" id="mname" placeholder="Middle name" name="mname">
+                       </div>
+                       
+                 
+                         <div class="row">
+                             <div class="col-lg-4 col-md-4 mt-3">
+                             
+                                     <select class="form-select" required aria-label="Degree">
+                                       <option value="">Degree</option>
+                                       <option value="it">BSIT</option>
+                                       <option value="hm">BSHM</option>
+                                       <option value="ed">BSED</option>
+                                       <option value="sed">BEED</option>
+                                     </select>
+                             </div>
+                 
+                             <div class="col-lg-4 col-md-4 mt-3">
+                                     <select class="form-select" required aria-label="Year">
+                                         <option value="">Year</option>
+                                         <option value="1">1</option>
+                                         <option value="2">2</option>
+                                         <option value="3">3</option>
+                                         <option value="4">4</option>
+                                       </select> 
+                             </div>
+                 
+                             <div class="col-lg-4 col-md-4 mt-3">
+                                 <select class="form-select" required aria-label="Section">
+                                     <option value="">Section</option>
+                                     <option value="a">A</option>
+                                     <option value="b">B</option>
+                                     <option value="c">C</option>
+                                     <option value="d">D</option>
+                                   </select> 
+                         </div>
+                     </div>
+                 
+                     <div class="mb-3">
+                         <label for="validationTextarea" class="form-label mt-3">Experience:</label>
+                         <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Share your experience this semester" required></textarea>
+                         <div class="invalid-feedback">
+                             Please fill out this field.
+                         </div>
+                       </div>
+                 
+                       <div class="form-check mb-3">
+                         <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+                         <label class="form-check-label" for="myCheck">I agree submitting this form.</label>
+                         <div class="valid-feedback">Valid.</div>
+                         <div class="invalid-feedback">Check this checkbox to continue.</div>
+                       </div>
+                     </form>
+                   </div>
+                 </div>
+           
+                 <!-- Modal footer -->
+                 <div class="modal-footer">
+                   <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Submit</button>
+                 </div>
+           
+               </div>
+             </div>
+           </div>
+           
+        
+        
+        <div class="aboutUsSection">
+            <div class="abouts" id="about">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="img-container m-4">
+                                <div>
+                                    <img class="about-img w-100 " src="john doe.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="first-about-txt mt-4">John Doe</p>
+                                </div>
+                                <div  class="second-about-txt mt-4">
+                                    CEO & Founder
+                                </div>
+                                <div >
+                                    <p class="third-about-txt ">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                                </div>
+                                <a href="#contact">
+                                    <div>
+                                        <button class="contact w-100 mt-4">Contact</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="img-container m-4">
+                                <div>
+                                    <img class="about-img w-100 " src="john doe.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="first-about-txt mt-4">John Doe</p>
+                                </div>
+                                <div  class="second-about-txt mt-4">
+                                    CEO & Founder
+                                </div>
+                                <div >
+                                    <p class="third-about-txt">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                                </div>
+                                <a href="#contact">
+                                    <div>
+                                        <button class="contact w-100 mt-4">Contact</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="img-container m-4">
+                                <div>
+                                    <img class="about-img w-100 " src="john doe.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="first-about-txt mt-4">John Doe</p>
+                                </div>
+                                <div  class="second-about-txt mt-4">
+                                    CEO & Founder
+                                </div>
+                                <div >
+                                    <p class="third-about-txt">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                                </div>
+                                <a href="#contact">
+                                    <div>
+                                        <button class="contact w-100 mt-4">Contact</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="carouselChanges d-flex justify-content-center w-100" id="Gallery">
+                <div id="carouselExample" class="carousel slide col-12 col-md-11" data-bs-ride="carousel" data-bs-interval="2000"> 
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
+                    </ol>
+                
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="barn back.jpg" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="barn house.jpg" class="d-block w-100" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="brick house back.jpg" class="d-block w-100" alt="Image 3">
+                    </div>
+                    </div>
+                
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+    
+        <div class="contact-container mt-5" id="contact">
+            <div class="contact-logo">
+                Contact
+            </div>
+            <hr >
+            <div class="input d-flex flex-column">
+                <input class="input1 m-3 p-3 h-50" type="text" placeholder="Name">
+                <input class="input2 m-3 p-3 h-50" type="email" placeholder="Email">
+                <input class="input3 m-3 p-3 h-50" type="text" placeholder="Comment">
+                <input class="input4 m-3 p-3 h-50" type="text" placeholder="Feedback">
+            </div>
+                    <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-secondary m-3 p-3" data-bs-toggle="modal" data-bs-target="#myModa">
+                    Send Message
+            </button>
+            
+            <!-- The Modal -->
+            <div class="modal fade" id="myModa">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                        Your response is recorded.
+                        </div>
+                
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
