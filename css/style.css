@@ -31,6 +31,10 @@ header {
     letter-spacing: 3px;
 }
 
+.margin {
+    margin-left: -13px;
+}
+
 .act {
     border-style: none;
     font-size: 25px;
